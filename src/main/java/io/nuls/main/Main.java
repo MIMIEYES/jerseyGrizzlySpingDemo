@@ -14,7 +14,7 @@ public enum Main {
     private String moduleUrl;
     private ApiApplication entry;
 
-    public synchronized void init() {
+    public void init() {
         this.ip = PropertiesUtils.readProperty(RpcConstant.CFG_RPC_SERVER_IP);
         this.port = PropertiesUtils.readProperty(RpcConstant.CFG_RPC_SERVER_PORT);
         this.moduleUrl = PropertiesUtils.readProperty(RpcConstant.CFG_RPC_SERVER_URL);
